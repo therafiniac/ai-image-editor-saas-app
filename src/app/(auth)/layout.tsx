@@ -8,8 +8,8 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
     <Providers>
       <div className="flex min-h-screen">
         {/* Left Side - Branding */}
-        <div className="relative hidden overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 lg:flex lg:w-1/2">
-          <div className="bg-grid-white/[0.1] absolute inset-0 bg-[size:30px_30px]" />
+        <div className="relative hidden overflow-hidden bg-linear-to-br from-slate-900 via-blue-900 to-slate-800 lg:flex lg:w-1/2">
+          <div className="bg-grid-white/[0.1] absolute inset-0 bg-size:[30px_30px]" />
           <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16">
             {/* Logo */}
             <Link href="/" className="mb-12 flex items-center gap-3">
@@ -91,15 +91,15 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         </div>
 
         {/* Right Side - Auth Form */}
-        <div className="flex flex-1 flex-col justify-center bg-gradient-to-br from-slate-50 to-blue-50/30 px-6 py-12 lg:px-8">
+        <div className="flex flex-1 flex-col justify-center bg-linear-to-br from-slate-50 to-blue-50/30 px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             {/* Mobile Logo */}
             <div className="mb-8 text-center lg:hidden">
               <Link href="/" className="inline-flex items-center gap-2">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-r from-blue-500 to-purple-600 shadow-lg">
                   <Sparkles className="h-6 w-6 text-white" />
                 </div>
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent">
+                <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent">
                   AI Image Editor
                 </span>
               </Link>
